@@ -5,7 +5,7 @@
 
 .left-side {
   background-color: #455A64;
-  width: 50%;
+  width: 49%;
 }
 
 .left-side article {
@@ -50,4 +50,17 @@
   margin: 30px 20px;
   width: 90%;
   outline: none;
+}
+
+section {
+  display: inline-block;
+}
+
+.right-side {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #CFD8DC;
+  height: 983px;
+  width: 51%;
 }
