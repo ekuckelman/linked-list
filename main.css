@@ -50,6 +50,11 @@
   margin: 30px 20px;
   width: 90%;
   outline: none;
+  cursor: pointer;
+}
+
+.enter-button:hover {
+  background-color: #FFD773;
 }
 
 section {
@@ -64,3 +69,60 @@ section {
   height: 983px;
   width: 51%;
 }
+
+.card {
+  background-color: #FFFFFF;
+  border: solid #607D8B;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px 20px;
+
+}
+
+.card-title {
+  border-bottom: solid #CFD8DC;
+  color: #455A64;
+  font-size: 2em;
+  padding: 10px 0;
+}
+
+.card-url {
+  border-bottom: solid #CFD8DC;
+  color: #607D8B;
+  display: block;
+  font-size: 1.5em;
+  padding: 20px 0;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+}
+
+.card-url:hover {
+  color: #455A64;
+  font-weight: bold;
+  text-decoration-color: #FFC107;
+}
+
+.card-button {
+  color:#455A64;
+  margin-top: 10px;
+  position: absolute;
+  border-style: none;
+  font-size: .9em;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+}
+
+.card-button:hover {
+  text-decoration-color: #FFC107;
+  font-weight: bolder;
+}
+
+.read-button {
+  position: relative;
+}
+
+.delete-button {
+  right: 36px;
+}
+
+
