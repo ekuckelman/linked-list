@@ -110,6 +110,7 @@ section {
   font-size: .9em;
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
+  outline: none;
 }
 
 .card-button:hover {
@@ -123,6 +124,11 @@ section {
 
 .delete-button {
   right: 36px;
+}
+
+.read {
+  background-color: #F2F4F4;
+  color: #F05A28;
 }
 
 
