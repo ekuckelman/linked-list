@@ -110,6 +110,8 @@ section {
   font-size: .9em;
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
+  outline: none;
+  background-color: transparent;
 }
 
 .card-button:hover {
@@ -125,4 +127,11 @@ section {
   right: 36px;
 }
 
+.read {
+  color: #F05A28;
+}
+
+.read-card {
+  background-color: #F2F4F4;
+}
 
