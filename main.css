@@ -28,7 +28,6 @@
   vertical-align: bottom;
 }
 
-
 .inputs {
   font-size: 2em;
   margin: 30px 20px;
@@ -68,6 +67,7 @@ section {
   background-color: #CFD8DC;
   height: 983px;
   width: 51%;
+  overflow: scroll;
 }
 
 .card {
