@@ -1,12 +1,20 @@
+var deleteButton = $('.delete-button');
+var bookmarkCard = $('.card');
+var rightSide = $('.right-side');
+rightSide.on('click', '.delete-button', deleteBookmark);
+
 $('.enter-button').on('click', function(){
-  var titleInput = $('.title-input').val();
-  var websiteInput = $('.website-input').val();
-  var rightSide = $('.right-side');
-  
-  rightSide.append('<article class=\"card\"> <h2 class=\"card-title\">' + titleInput + '</h2><a href=\"' + websiteInput + '\" class=\"card-url\">' + websiteInput + '</a><button class=\"card-button read-button\">Read</button><button class=\"card-button delete-button\">Delete</button></article>');
+  var titleInput = $('.title-input');
+  var websiteInput = $('.website-input');
+  rightSide.append('<article class=\"card\"> <h2 class=\"card-title\">' + titleInput.val() + '</h2><a href=\"' + websiteInput.val() + '\" class=\"card-url\">' + websiteInput.val() + '</a><button class=\"card-button read-button\">Read</button><button class=\"card-button delete-button\">Delete</button></article>');
+  websiteInput.val('');
+  titleInput.val('');
 });
 
 
+function deleteBookmark () {
+  $(this).closest('article').remove();
+};
 
 // If, else statement that if the button is clicked, 
 // then toggle the button from disabled to enabled. 
