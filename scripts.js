@@ -12,14 +12,17 @@ $('.enter-button').on('click', function(){
     rightSide.append('<article class=\"card\"> <h2 class=\"card-title\">' + titleInput.val() + '</h2><a href=\"' + websiteInput.val() + '\" class=\"card-url\">' + websiteInput.val() + '</a><button class=\"card-button read-button\">Read</button><button class=\"card-button delete-button\">Delete</button></article>');
   websiteInput.val('');
   titleInput.val('');
+  readCounter();
   }
   
 });
 
 
 
+
 function deleteBookmark () {
   $(this).closest('article').remove();
+  readCounter();
 };
 
 // If, else statement that if the button is clicked, 
@@ -33,6 +36,7 @@ rightSide.on('dblclick', '.read-button', markAsUnread);
 function markAsRead() {
   $(this).closest('.read-button').addClass('read');
   $(this).closest('article').addClass('read-card');
+  readCounter();
   console.log('read button clicked');
 }
 
@@ -40,4 +44,11 @@ function markAsUnread () {
   $(this).closest('.read-button').removeClass('read');
   $(this).closest('article').removeClass('read-card');
   console.log('read button double clicked');
+  readCounter();
+}
+
+function readCounter () {
+  var testR = $('.test-read')
+  testR.text($('.read').length)
+
 }
