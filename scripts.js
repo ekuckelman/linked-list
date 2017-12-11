@@ -13,6 +13,7 @@ $('.enter-button').on('click', function(){
   websiteInput.val('');
   titleInput.val('');
   readCounter();
+  linkCounter();
   }
   
 });
@@ -33,8 +34,8 @@ function markAsRead() {
 }
 
 function readCounter () {
-  var testR = $('.test-read')
-  testR.text($('.read').length)
+  var testR = $('.test-read');
+  testR.text($('.read').length);
 }
 
 function  linkCounter () {
