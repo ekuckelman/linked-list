@@ -17,19 +17,11 @@ $('.enter-button').on('click', function(){
   
 });
 
-
-
-
-function deleteBookmark () {
+function deleteBookmark() {
   $(this).closest('article').remove();
   readCounter();
 };
 
-// If, else statement that if the button is clicked, 
-// then toggle the button from disabled to enabled. 
-// Else the button and card css will stay as is. 
-
-var rightSide = $('.right-side');
 rightSide.on('click', '.read-button', markAsRead);
 rightSide.on('dblclick', '.read-button', markAsUnread);
 
@@ -37,18 +29,18 @@ function markAsRead() {
   $(this).closest('.read-button').addClass('read');
   $(this).closest('article').addClass('read-card');
   readCounter();
-  console.log('read button clicked');
+ 
 }
 
-function markAsUnread () {
+function markAsUnread() {
   $(this).closest('.read-button').removeClass('read');
   $(this).closest('article').removeClass('read-card');
-  console.log('read button double clicked');
   readCounter();
 }
 
 function readCounter () {
   var testR = $('.test-read')
   testR.text($('.read').length)
-
 }
+}
+
