@@ -28,7 +28,6 @@
   vertical-align: bottom;
 }
 
-
 .inputs {
   font-size: 2em;
   margin: 30px 20px;
@@ -68,6 +67,7 @@ section {
   background-color: #CFD8DC;
   height: 983px;
   width: 51%;
+  overflow: scroll;
 }
 
 .card {
@@ -111,6 +111,7 @@ section {
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
   outline: none;
+  background-color: transparent;
 }
 
 .card-button:hover {
@@ -127,8 +128,13 @@ section {
 }
 
 .read {
+
   background-color: #F2F4F4;
   color: #F05A28;
+}
+
+.read-card {
+  background-color: #F2F4F4;
 }
 
 
