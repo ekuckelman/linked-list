@@ -19,22 +19,16 @@ $('.enter-button').on('click', function(){
 
 function deleteBookmark() {
   $(this).closest('article').remove();
+  linkCounter();
   readCounter();
 };
 
 rightSide.on('click', '.read-button', markAsRead);
-rightSide.on('dblclick', '.read-button', markAsUnread);
 
 function markAsRead() {
-  $(this).closest('.read-button').addClass('read');
-  $(this).closest('article').addClass('read-card');
-  readCounter();
- 
-}
-
-function markAsUnread() {
-  $(this).closest('.read-button').removeClass('read');
-  $(this).closest('article').removeClass('read-card');
+  $(this).toggleClass('read');
+  $(this).closest('article').toggleClass('read-card');
+  $(this).siblings('a').toggleClass('change-underline');
   readCounter();
 }
 
@@ -42,5 +36,8 @@ function readCounter () {
   var testR = $('.test-read')
   testR.text($('.read').length)
 }
-}
 
+function  linkCounter () {
+  var links = $('.card').length;
+    $('.count').text(links);
+}

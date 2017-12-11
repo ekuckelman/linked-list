@@ -3,13 +3,19 @@
   font-family: "open sans", sans-serif;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .left-side {
   background-color: #455A64;
   width: 49%;
 }
 
 .left-side article {
-  padding: 275px 0 292px 0;
+  padding: 275px 0 0 0;
 }
 
 .logo {
@@ -41,15 +47,13 @@
 }
 
 .enter-button {
-  background-color: #FFC107;
+  background-color: #FFC107; 
   border-radius: 0px;
   color: #FFFFFF;
   display: block;
-  font-size: 1.5em;
+  font-size: 1.9em;
   margin: 30px 20px;
-  width: 90%;
-  outline: none;
-  cursor: pointer;
+  width: 91.3%;
 }
 
 .enter-button:hover {
@@ -76,7 +80,6 @@ section {
   width: 90%;
   margin: 20px auto;
   padding: 10px 20px;
-
 }
 
 .card-title {
@@ -106,11 +109,9 @@ section {
   color:#455A64;
   margin-top: 10px;
   position: absolute;
-  border-style: none;
   font-size: .9em;
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
-  outline: none;
   background-color: transparent;
 }
 
@@ -131,10 +132,50 @@ section {
 
   background-color: #F2F4F4;
   color: #F05A28;
+  font-weight: bolder;
 }
 
 .read-card {
   background-color: #F2F4F4;
 }
 
+.link-counter {
+  background-color: #FFFFFF; 
+  border: 5px solid #FFC107;
+  color: #455A64;
+  margin: 55px 20px;
+  text-align: center;
+  width: 89.3%;
+}
+
+.link-counter h2 {
+  margin: 5px 0;
+}
+
+.count {
+  color: #FFC107;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 5px 0;
+  height: 50px;
+}
+
+.clear-bookmarks-button {
+  background-color: #F2F4F4;
+  border: 1.5px solid #455A64;
+  color: #455A64;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 5px;
+}
+
+.clear-bookmarks-button:hover {
+  border-color: #FFC107;
+}
+
+.change-underline {
+  text-decoration: underline;
+  text-decoration-color: #CFD8DC;
+}
 
