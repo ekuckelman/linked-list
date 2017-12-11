@@ -129,6 +129,8 @@ section {
 }
 
 .read {
+
+  background-color: #F2F4F4;
   color: #F05A28;
   font-weight: bolder;
 }
@@ -176,6 +178,4 @@ section {
   text-decoration: underline;
   text-decoration-color: #CFD8DC;
 }
-
-
 
