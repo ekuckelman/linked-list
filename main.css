@@ -88,8 +88,6 @@ section {
   display: inline-block;
 }
 
-
-
 .right-side {
   position: absolute;
   top: 0;
@@ -173,13 +171,14 @@ section {
   border: 5px solid #FFC107;
   color: #455A64;
   margin: auto;
-  /*margin: 55px 20px;*/
   text-align: center;
   width: 89.3%;
 }
 
 .link-counter h2 {
-  margin: 5px 0;
+  font-size: 1.4em;
+  margin: 5px 5px;
+  text-decoration: underline;
 }
 
 .count {
@@ -188,6 +187,7 @@ section {
   font-weight: bolder;
   margin: 5px 0;
   height: 50px;
+  text-align: center;
 }
 
 .clear-bookmarks-button {
@@ -196,17 +196,40 @@ section {
   color: #455A64;
   font-size: 1.4em;
   margin-bottom: 10px;
+  margin-left: 20px;
   outline: none;
   padding: 5px;
+  width: 90%;
 }
 
 .clear-bookmarks-button:hover {
-  border-color: #FFC107;
+  border-color: #FFD773;
 }
 
 .change-underline {
   text-decoration: underline;
   text-decoration-color: #CFD8DC;
+}
+
+.test-read {
+  color: #F05A28;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 5px 0;
+  height: 50px;
+  text-align: center;
+}
+
+.read-bookmarks {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.bookmarks-on-page {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
 }
 
 @media screen and (max-width: 1474px) {
@@ -327,7 +350,6 @@ section {
     left: 4%;
     height: 19%;
     width: 88.3%;
-
   }
 
   .link-counter h2{
@@ -343,7 +365,6 @@ section {
     left: 19%;
     margin: 0;
     font-size: 1.3em;
-
   }
 
   .clear-bookmarks-button {
@@ -352,6 +373,4 @@ section {
     right: 6%;
     font-size: .1em;
   }
-
-
 }
