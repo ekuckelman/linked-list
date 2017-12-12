@@ -149,7 +149,7 @@ section {
 }
 
 .delete-button {
-  right: 36px;
+  right: 5%;
 }
 
 .read {
@@ -230,6 +230,25 @@ section {
   display: inline-block;
   width: 49%;
   text-align: center;
+}
+
+@media screen and (min-width: 1700px) {
+  .logo {
+    font-size: 6em;
+  }
+
+  .logo img {
+    height: 95px;
+    width: 130px;
+  }
+
+  .inputs {
+    font-size: 4em;
+  }
+
+  .enter-button {
+    font-size: 3em;
+  }
 }
 
 @media screen and (max-width: 1474px) {
@@ -352,25 +371,56 @@ section {
     width: 88.3%;
   }
 
-  .link-counter h2{
-    position: absolute;
-    top: 7%;
-    left: 3%;
-    margin: 0;
+  .bookmarks-on-page {
+    width: 48%;
   }
 
-  .count {
-    position: absolute;
-    top: 31%;
-    left: 19%;
-    margin: 0;
-    font-size: 1.3em;
+  .count,
+  .test-read {
+    font-size: 1em;
+    height: 15px;
+  }
+
+  .link-counter h2{
+    font-size: .8em; 
   }
 
   .clear-bookmarks-button {
-    position: absolute;
-    bottom: -12%;
-    right: 6%;
-    font-size: .1em;
+    font-size: .4em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .inputs {
+    font-size: 1.2em;
+  }
+
+  .enter-button {
+    font-size: 0.9em;
+  }
+
+  .logo img {
+    height: 25px;
+    width: 36px;
+  }
+
+  .link-counter h2 {
+    font-size: .6em;
+  }
+
+  .count,
+  .test-read {
+    font-size: .8em;
+    height: 8px;
+  }
+
+  .clear-bookmarks-button {
+    font-size: .2em;
+    padding: 3px;
   }
 }
