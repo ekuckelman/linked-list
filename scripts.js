@@ -24,6 +24,14 @@ function deleteBookmark() {
   readCounter();
 };
 
+function deleteAllBookmarks() {
+  $('.read-card').remove();
+  linkCounter();
+  readCounter();
+}
+
+$('body').on('click', '.clear-bookmarks-button', deleteAllBookmarks);
+
 rightSide.on('click', '.read-button', markAsRead);
 
 function markAsRead() {
