@@ -5,51 +5,50 @@ body {
 
 button {
   border: none;
-  outline: none;
   cursor: pointer;
+  outline: none;
 }
 
 .left-side {
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: #455A64;
   height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 50%;
 }
 
 .left-side article {
+  height: 75%;
   position: absolute;
   top: 10%;
   width: 100%;
-  height: 75%
 }
 
 .logo {
-  position: absolute;
-  top: 25%;
-  left: 5%;
   color:#FFFFFF;
   font-size: 4.5em;
   font-weight: bold;
+  left: 5%;
   letter-spacing: 0.04em;
-  margin: auto;
+  position: absolute;
   text-align: center;
+  top: 25%;
   width: 90%;
 }
 
 .logo img {
   height: 72px;
-  width: 100px;
   vertical-align: bottom;
+  width: 100px;
 }
 
 .inputs {
-  position: absolute;
   font-size: 2em;
   margin: 30px 20px;
-  width: 90%;
   outline: none;
+  position: absolute;
+  width: 90%;
 }
 
 .title-input {
@@ -68,15 +67,13 @@ button {
 }
 
 .enter-button {
-  position: absolute;
-  top: 77%;
-  left: 4.5%;
   background-color: #FFC107; 
   border-radius: 0px;
   color: #FFFFFF;
-  display: block;
   font-size: 1.9em;
-/*  margin: 30px 20px; */
+  position: absolute;
+  top: 77%;
+  left: 4.5%;
   width: 91.3%;
 }
 
@@ -89,21 +86,21 @@ section {
 }
 
 .right-side {
+  background-color: #CFD8DC;
+  height: 100%;
+  overflow: scroll;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #CFD8DC;
-  height: 100%;
   width: 50%;
-  overflow: scroll;
 }
 
 .card {
   background-color: #FFFFFF;
   border: solid #607D8B;
-  width: 90%;
   margin: 20px auto;
   padding: 10px 20px;
+  width: 90%;
 }
 
 .card-title {
@@ -130,18 +127,18 @@ section {
 }
 
 .card-button {
+  background-color: transparent;
   color:#455A64;
+  font-size: .9em;
   margin-top: 10px;
   position: absolute;
-  font-size: .9em;
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
-  background-color: transparent;
 }
 
 .card-button:hover {
-  text-decoration-color: #FFC107;
   font-weight: bolder;
+  text-decoration-color: #FFC107;
 }
 
 .read-button {
@@ -153,7 +150,6 @@ section {
 }
 
 .read {
-
   background-color: #F2F4F4;
   color: #F05A28;
   font-weight: bolder;
@@ -164,29 +160,29 @@ section {
 }
 
 .link-counter {
-  position: absolute;
-  top: 92%;
-  left: 5%;
   background-color: #FFFFFF; 
   border: 5px solid #FFC107;
   color: #455A64;
   margin: auto;
+  position: absolute;
+  top: 92%;
+  left: 5%;
   text-align: center;
   width: 89.3%;
 }
 
 .link-counter h2 {
   font-size: 1.4em;
-  margin: 5px 5px;
+  margin: 5px;
   text-decoration: underline;
 }
 
 .count {
   color: #FFC107;
+  height: 50px;
   font-size: 2em;
   font-weight: bolder;
   margin: 5px 0;
-  height: 50px;
   text-align: center;
 }
 
@@ -215,21 +211,21 @@ section {
   color: #F05A28;
   font-size: 2em;
   font-weight: bolder;
-  margin: 5px 0;
   height: 50px;
+  margin: 5px 0;
   text-align: center;
 }
 
 .read-bookmarks {
   display: inline-block;
-  width: 50%;
   text-align: center;
+  width: 50%;
 }
 
 .bookmarks-on-page {
   display: inline-block;
-  width: 49%;
   text-align: center;
+  width: 49%;
 }
 
 @media screen and (min-width: 1700px) {
