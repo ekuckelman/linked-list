@@ -1,7 +1,10 @@
 var deleteButton = $('.delete-button');
 var bookmarkCard = $('.card');
 var rightSide = $('.right-side');
+
 rightSide.on('click', '.delete-button', deleteBookmark);
+$('body').on('click', '.clear-bookmarks-button', deleteAllBookmarks);
+rightSide.on('click', '.read-button', markAsRead);
 
 $('.enter-button').on('click', function(){
   var titleInput = $('.title-input');
@@ -15,24 +18,19 @@ $('.enter-button').on('click', function(){
   readCounter();
   linkCounter();
   }
-  
 });
 
 function deleteBookmark() {
   $(this).closest('article').remove();
   linkCounter();
   readCounter();
-};
+}
 
 function deleteAllBookmarks() {
   $('.read-card').remove();
   linkCounter();
   readCounter();
 }
-
-$('body').on('click', '.clear-bookmarks-button', deleteAllBookmarks);
-
-rightSide.on('click', '.read-button', markAsRead);
 
 function markAsRead() {
   $(this).toggleClass('read');
@@ -41,12 +39,12 @@ function markAsRead() {
   readCounter();
 }
 
-function readCounter () {
+function readCounter() {
   var testR = $('.test-read');
   testR.text($('.read').length);
 }
 
-function  linkCounter () {
+function  linkCounter() {
   var links = $('.card').length;
-    $('.count').text(links);
+  $('.count').text(links);
 }
