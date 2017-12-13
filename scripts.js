@@ -9,14 +9,17 @@ rightSide.on('click', '.read-button', markAsRead);
 $('.enter-button').on('click', function(){
   var titleInput = $('.title-input');
   var websiteInput = $('.website-input');
-  if (titleInput.val() == '' || websiteInput.val() == '' ) {
+  if (titleInput.val() === '' || validURL() == false) {
+    alert('Please enter a title and valid URL');
     $('.enter-button').attr('disabled')
+    $('.title-input').focus()
   } else {
     rightSide.append('<article class=\"card\"> <h2 class=\"card-title\">' + titleInput.val() + '</h2><a href=\"' + websiteInput.val() + '\" class=\"card-url\">' + websiteInput.val() + '</a><button class=\"card-button read-button\">Read</button><button class=\"card-button delete-button\">Delete</button></article>');
   websiteInput.val('');
   titleInput.val('');
   readCounter();
   linkCounter();
+  $('.title-input').focus()
   }
 });
 
@@ -48,3 +51,14 @@ function  linkCounter() {
   var links = $('.card').length;
   $('.count').text(links);
 }
+
+function validURL (){
+  var validateUrl = /^(http|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-_])+(.[a-z])?/;
+  var regex = new RegExp(validateUrl);
+  var websiteAddress = $('.website-input').val();
+  if (websiteAddress.match(regex)) {
+    return true
+  }else {
+    return false;
+  }
+};
