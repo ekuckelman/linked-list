@@ -1,6 +1,6 @@
 # linked-list
 
-## The project:
+## Project Specs 
 1. Make the site
   * Two input fields
   * One for the title of the bookmark
